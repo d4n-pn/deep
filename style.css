@@ -1,0 +1,225 @@
+body {
+    --nav-height: 58px;
+    --primary-text: #E4E6EB;
+    --dark-black-second-1: #FFFFFF1A;
+    --dark-black-prime-1: #3a3b3c;
+    --primary-btn-background: #0866ff;
+}
+
+body {
+    margin: 0;
+    background-color: var(--dark-black-prime-1);
+}
+
+.round-40 {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--dark-black-second-1);
+}
+.center-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center-left {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.head-nav {
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    border-width: 1px 0px;
+    border-color: var(--dark-black-second-1);
+    border-style: solid;
+    background-color: var(--dark-black-prime-1);
+}
+.head-nav-left-container {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    padding-left: 16px;
+    left: 0;
+    justify-content: right;
+    align-items: center;
+}
+.head-nav-right-container {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    padding-right: 16px;
+    right: 0;
+    justify-content: left;
+    align-items: center;
+}
+.head-nav-midle-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.head-nav-midle {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+.head-nav-midle-btn {
+    width: 19%;
+    height: 90%;
+    margin-left: 1%;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.head-nav-midle-btn:hover {
+    background-color: var(--dark-black-second-1);
+}
+.seach-container {
+    position: relative;
+    height: 40px;
+}
+.seach-input {
+    width: 260px;
+    height: 40px;
+    border-radius: 50vh;
+    background-color: var(--dark-black-second-1);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.left-area {
+    position: fixed;
+    max-width: 360px;
+    width: 25%;
+    height: calc(100% - var(--nav-height));
+    top: var(--nav-height);
+    left: 0;
+}
+.right-area {
+    position: fixed;
+    max-width: 360px;
+    width: 25%;
+    height: calc(100% - var(--nav-height));
+    top: var(--nav-height);
+    right: 0;
+}
+.sub-area-container {
+    width: calc(100% - 16px);
+    padding: 8px 8px 4px 8px;
+}
+.btn-fit-border {
+    display: flex;
+    width: 100%;
+    height: 52px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-fit-border:hover {
+    background-color: var(--dark-black-second-1);
+}
+.margin-top-10 {
+    margin-top: 10px;
+}
+.divider {
+    border-top: 1px solid var(--dark-black-second-1);
+    width: 94%;
+    margin: 0 3%;
+}
+.divider-full {
+    border-top: 1px solid var(--dark-black-second-1);
+    width: 100%;
+}
+.rectangle-120 {
+    width: 120px;
+    height: 120px;
+    background-color: var(--dark-black-second-1);
+}
+.mid-container {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 25%;
+    right: 25%;
+    z-index: -1;
+}
+.mid-content-area {
+    max-width: 680px;
+    margin-top: var(--nav-height);
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+.card {
+    border-radius: 6px;
+    background-color: var(--dark-black-second-1);
+    position: relative;
+}
+.card-story {
+    display: inline-block;
+    border-radius: 6px;
+    min-width: 112px;
+    height: 200px;
+    margin-right: 5px;
+    background-color: var(--dark-black-prime-1);
+    box-sizing: border-box;
+}
+.container-5-12 {
+    display: flex;
+    padding: 5px 12px;
+    box-sizing: content-box;
+}
+.card-story-container {
+    display: flex;
+    padding: 8px;
+    overflow: auto;
+}
+.card-story-container::-webkit-scrollbar {
+    display: none;
+}
+.primary-icon {
+    --primary-icon: #E4E6EB;
+    color: var(--primary-icon);
+}
+.margin-r-8 {
+    margin-right: 8px;
+}
+.margin-l-8 {
+    margin-left: 8px;
+}
+.margin-l-12 {
+    margin-left: 12px;
+}
+.primary-text {
+    color: var(--primary-text);
+    font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.under-line-selected {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 5%;
+    border-radius: 50vh;
+    background-color: var(--primary-btn-background);
+}
+.btn-active {
+    color: var(--primary-btn-background) !important;
+    background-color: transparent !important;
+}
+.btn-active .under-line-selected {
+    display: block !important;
+}
+.container-2 {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+}
