@@ -169,6 +169,7 @@ body {
     margin-right: 5px;
     background-color: var(--dark-black-prime-1);
     box-sizing: border-box;
+    position: relative;
 }
 .container-5-12 {
     display: flex;
@@ -179,6 +180,28 @@ body {
     display: flex;
     padding: 8px;
     overflow: auto;
+    position: relative;
+}
+#btn-left-scroll {
+    display: none;
+    position: absolute;
+    align-self: center;
+    left: 8px;
+    z-index: 100;
+    background-color: var(--dark-black-prime-1);  
+}
+#btn-left-scroll:hover {
+    background-color: var(--dark-black-second-1);
+}
+#btn-right-scroll {
+    position: absolute;
+    align-self: center;
+    right: 8px;
+    z-index: 100;
+    background-color: var(--dark-black-prime-1);
+}
+#btn-right-scroll:hover {
+    background-color: var(--dark-black-second-1);
 }
 .card-story-container::-webkit-scrollbar {
     display: none;
@@ -195,6 +218,9 @@ body {
 }
 .margin-l-12 {
     margin-left: 12px;
+}
+.margin-top-20 {
+    margin-top: 20px;
 }
 .primary-text {
     color: var(--primary-text);
@@ -222,4 +248,73 @@ body {
     display: inline-block;
     width: 50%;
     position: relative;
+}
+.layout-relative {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.layout-horizontal {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    border-radius: inherit;
+}
+.card-image {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    transition: linear 500ms 500ms;
+}
+.card-image-first {
+    height: 75%;
+    border-radius: 6px 6px 0 0;
+}
+.card-btn-add {
+    position: absolute;
+    border-radius: 50vh;
+    width: 40px;
+    height: 40px;
+    border-width: 3px;
+    border-color: var(--dark-black-prime-1);
+    border-style: solid;
+    background-color: var(--primary-btn-background);
+    box-sizing: border-box;
+    bottom: -20px;
+}
+.clip-image {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-radius: inherit;
+    overflow: hidden;
+}
+.card-image:hover {
+    scale: 1.05;
+}
+.text-bottom-card {
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    font-size: 12px;
+    color: var(--primary-text);
+    padding: 28px 8px 0 8px;
+    bottom: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+.text-align-center {
+    text-align: center;
+}
+.input-story {
+    width: calc(100% - 48px);
+    height: 40px;
+    border-radius: 50vh;
+    background-color: var(--dark-black-second-1);
+    margin-left: 8px;
 }
