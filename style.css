@@ -142,6 +142,7 @@ body {
     background-color: var(--dark-black-second-1);
 }
 .mid-container {
+    display: flex;
     position: fixed;
     width: 50%;
     height: 100%;
@@ -149,6 +150,11 @@ body {
     left: 25%;
     right: 25%;
     z-index: -1;
+    justify-content: center;
+    overflow: auto;
+}
+.mid-container::-webkit-scrollbar {
+    display: none;
 }
 .mid-content-area {
     max-width: 680px;
@@ -174,7 +180,7 @@ body {
 .container-5-12 {
     display: flex;
     padding: 5px 12px;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 .card-story-container {
     display: flex;
@@ -255,6 +261,9 @@ body {
     height: 100%;
     position: relative;
 }
+.column-layout {
+    flex-direction: column;
+}
 .layout-horizontal {
     display: flex;
     width: 100%;
@@ -312,9 +321,63 @@ body {
     text-align: center;
 }
 .input-story {
+    display: flex;
     width: calc(100% - 48px);
     height: 40px;
     border-radius: 50vh;
     background-color: var(--dark-black-second-1);
+    border: none;
     margin-left: 8px;
+    align-items: center;
+    justify-content: left;
+    padding-left: 12px;
+}
+
+.avatar-on-card {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border-width: 4px;
+    border-radius: 50vh;
+    border-color: var(--primary-btn-background);
+    border-style: solid;
+    top: 8px;
+    left: 8px;
+}
+.dot-active {
+    display: none;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    box-sizing: content-box;
+    border: solid 2px var(--dark-black-prime-1);
+    border-radius: 50vh;
+    border-width: 1px;
+    background-color: green;
+    bottom: -2px;
+    right: -2px;
+}
+
+.avatar-active .dot-active {
+    display: block;
+}
+
+.rectangle-40-radius {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.img-content {
+    display: inline;
+    width: 100%;
+    height: 500px;
+}
+.time {
+    color: var(--primary-text);
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 5px;
 }
